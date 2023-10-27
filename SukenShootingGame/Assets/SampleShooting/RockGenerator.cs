@@ -5,7 +5,7 @@ using UnityEngine;
 public class RockGenerator : MonoBehaviour
 {
 
-    public GameObject rockPrefab;
+    public GameObject CirclePrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +19,6 @@ public class RockGenerator : MonoBehaviour
     }
     
     void GenRock() {
-        Instantiate(rockPrefab, new Vector3(-2.5f + 5 * Random.value, 6, 0), Quaternion.identity);
+        Instantiate(CirclePrefab, new Vector3(-2.5f + 5 * Random.value, 6, 0), Quaternion.identity);
     }
  }

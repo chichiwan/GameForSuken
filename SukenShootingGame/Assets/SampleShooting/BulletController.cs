@@ -16,7 +16,7 @@ public class BulletController : MonoBehaviour
     }
     
     void OnTriggerEnter2D(Collider2D coll) {
-        if(transform.position.y > -3/*coll.gameObject.tag == "Rock"*/) {
+        if(transform.position.y > -3/*coll.gameObject.tag == "SpherePrefab"*/) {
             GameObject.Find("Canvas").GetComponent<UIController> ().AddScore ();
         
             GameObject effect = Instantiate(explosionPrefab, transform.position, Quaternion.identity) as GameObject;
